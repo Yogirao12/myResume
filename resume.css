@@ -1,0 +1,408 @@
+section{
+    width:95%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid red; */
+    min-height: 400px;
+}
+section:nth-child(2n){
+    background-color:lightgray;
+}
+
+body{
+    margin:0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body-header{
+    height: 65vh;
+    opacity: 0.8px;
+    background-image: url(https://c0.wallpaperflare.com/preview/235/755/831/apple-mouse-artificial-flowers-blurred-background-close-up.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+nav{
+    /* border:1px solid red; */
+    color:white;
+    position: relative;
+}
+
+.bar{
+    position:relative;
+    font-size: 1.5rem;
+    display: none;
+    width: 100%;
+    height: 30px;
+    /* background-color: violet; */
+}
+.bar a{
+    position:absolute;
+    right:5%;
+    top:0%;
+    color:black;
+}
+.bar input{
+    visibility: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .bar{
+        display: block;
+    }
+    #h-lst{
+        display: none;
+    }
+    #h-lst:target{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        width:100px;
+        height: auto;
+        padding: 10px 0;
+        right: 0;
+        top:30px;
+        display: none;
+    }
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+    font-size: .8rem;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+    .nav-menu li a{transition: color 0.5s, border-bottom 4s;}
+
+.nav-menu li a:hover{
+    color:red;
+    border-bottom:1px solid white;
+    
+}
+#name-social-contaner{
+    position: absolute;
+    top:20%;
+    left:43%;
+}
+#my-name{
+    font-size: 1.8rem;
+    letter-spacing:0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+#social-icon  li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.horizontal-list li a:hover{
+    box-shadow: 0px 0px 6px 4px red;
+    border-bottom: 1px solid red;
+}
+#About{
+    height: auto;
+    width: 95% ;
+    position: relative;
+    
+}
+#my-image{
+    height: 14rem;
+    width: 14rem;
+    margin: auto;
+    margin-top: -17vh;
+
+
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px red;
+
+    
+}
+#About p{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 15px;
+    color: grey;
+    text-align: justify;
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    line-height: 30px;
+    margin: auto;
+}
+/* #Skills{
+           width: 80%;
+           border: 1px solid red;
+           display: flex;
+           flex-direction: column;
+           
+} */
+
+.section-heading{
+    width: auto;
+    font-weight: 400;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+}
+.skills-display{
+    border-radius: 0.8rem;
+    /* border: 2px solid red; */
+    min-height: 300px;
+    width: 98%;
+
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+.skills-progress{
+    height: 30px;
+    width: 300px;
+    display: flex;
+    text-align: justify;
+
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 10px;
+    
+    
+}
+.eighty-five-percent{
+    width: 80%;
+    background-color:green;
+    border-radius: 0.8rem;
+    justify-content: center;
+}
+.skills-name{
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.eighty-percent{
+    width: 80%;
+    background-color: orangered;
+    border-radius: 0.8rem;
+    justify-content: center;
+}
+.eighty-six-percent{
+    width: 86%;
+    background-color: blue;
+    border-radius: 0.8rem;
+    justify-content: center;
+}
+/*experience part and education part both css part due of same class */
+.timeline{
+    width: 80;
+    /* border: 2px solid black; */
+    position: relative;
+
+}
+.experience-name{
+    text-align: center;
+}
+.experience-name h1{
+    display: inline-block;
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    left: 5%;
+    min-height: 150px;
+    width: 40%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.company-icon{
+    /* border: 2px solid red; */
+    height: 40%;
+    display: flex;
+    font-size: 3rem;
+    color: red;
+}
+.about-company{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.company-part{
+    display: flex;
+    flex-direction: column;
+}
+.company{
+    color: blue;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.company-name{
+    color:red;
+    font-size: 0.98rem;
+}
+.year{
+    font-size: 0.7rem;
+}
+
+.timeline-box:nth-child(2n+1):after{
+    position: absolute;
+    content:"";
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    right: -12.5%;
+    background-color: red;
+    top: 34%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n):after{
+    position: absolute;
+    content:"";
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: -9%;
+    background-color: red;
+    top: 34%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    height: 75%;
+    width: 2px;
+    border: 2px dashed blue;
+}
+.timeline-icon{
+    position: sticky;
+    transform: rotate(90deg);
+    font-size: larger;
+    top: 25%;
+    z-index: 2;
+}
+
+.work-images{
+    width: 100%;
+    padding: 20px 10px ;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.images-1{
+    border-radius: 0.8rem;
+    display: flex;
+    /* border: 2px solid blue; */
+    height: 200px;
+    width:30%;
+    margin:10px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-name{
+    text-align: center;
+}
+.portfolio-name h1{
+    display: inline-block;
+}
+.education-name{
+    text-align: center;
+}
+.education-name h1{
+    display: inline-block;
+}
+/*contact scetion*/
+.contact-name{
+    text-align: center;
+}
+.contact-name h1{
+    display: inline-block;
+}
+#Contact{
+    background: linear-gradient(to right,#2A56A2,#403066);
+
+}
+.contact-name{
+    font-size: 2rem;
+    color: white;
+}
+
+.required-details{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.required-details div{
+    width:50%;
+}
+
+.required-details input{
+    border: none;
+    background: transparent;
+    display: block;
+    border-bottom: 2px solid white;
+    margin: 20px;
+    width: 50%;
+    color: white;
+}
+.required-details input::placeholder{
+    color: white;
+}
+
+.required-details textarea::placeholder{
+    color: white;
+}
+
+.required-details textarea{
+    color: white;
+    background: transparent;
+    display: block;
+    border: none;
+    width:50%;
+    border-bottom: 2px solid white;
+    margin: 8px;
+}
+.required-details h1{
+    color: white;
+}
+.required-details h4{
+    color: white;
+}
+.required-details p{
+    color: white;
+}
